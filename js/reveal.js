@@ -39,22 +39,22 @@
 
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions
-			width: 960,
-			height: 700,
+			width: 1600,
+			height: 900,
 
 			// Factor of the display size that should remain empty around the content
-			margin: 0.04,
+			margin: 0.02,
 
 			// Bounds for smallest/largest possible scale to apply to content
 			minScale: 0.2,
 			maxScale: 2.0,
 
 			// Display presentation control arrows
-			controls: true,
+			controls: false,
 
 			// Help the user learn the controls by providing hints, for example by
 			// bouncing the down arrow when they first encounter a vertical slide
-			controlsTutorial: true,
+			controlsTutorial: false,
 
 			// Determines where controls appear, "edges" or "bottom-right"
 			controlsLayout: 'bottom-right',
@@ -64,7 +64,7 @@
 			controlsBackArrows: 'faded',
 
 			// Display a presentation progress bar
-			progress: true,
+			progress: false,
 
 			// Display the page number of the current slide
 			// - true:    Show slide number
@@ -148,7 +148,7 @@
 			// If you're on slide 1.3 and navigate right, you will normally move
 			// from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
 			// from 1.3 -> 2.3.
-			navigationMode: 'default',
+			navigationMode: 'linear',
 
 			// Randomizes the order of slides each time the presentation loads
 			shuffle: false,
@@ -178,7 +178,7 @@
 			// - null:   Media will only autoplay if data-autoplay is present
 			// - true:   All media will autoplay, regardless of individual setting
 			// - false:  No media will autoplay, regardless of individual setting
-			autoPlayMedia: null,
+			autoPlayMedia: true,
 
 			// Global override for preloading lazy-loaded iframes
 			// - null:   Iframes with data-src AND data-preload will be loaded when within
