@@ -34,17 +34,39 @@ $selectionBackgroundColor: #e7ad52;
 // ---------------------------------------------
 
 // Custom - Conducting Humane Code Reviews -----
+.title {
+  text-align:left; 
+  width:70%
+}
+
 .human-like {
   font-family: "Permanent Marker", serif;
-  font-size: 1.5em;
+}
+
+.underscore-yellow {
+  text-decoration: underline solid #FAB829;
+}
+
+.out-of-focus {
+  color: #4d4d4d;
+}
+
+.in-focus {
+  color: #eee;
+}
+
+.largest {
+  font-size: 4em !important;
 }
 
 .topic-annotation {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  transform: translateY(10vh);
+  text-align: right;
   width: 100%;
+  
+  p { 
+    margin: 0; 
+  }
 }
+
 // ---------------------------------------------

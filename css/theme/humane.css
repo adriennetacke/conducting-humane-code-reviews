@@ -56,10 +56,10 @@ body {
   font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 2.85em; }
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 1.95em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -226,10 +226,7 @@ body {
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  margin: 15px 0px; }
 
 .reveal section img.plain {
   border: 0;
@@ -270,14 +267,28 @@ body {
   .backgrounds {
     background-color: #111; } }
 
+.title {
+  text-align: left;
+  width: 70%; }
+
 .human-like {
-  font-family: "Permanent Marker", serif;
-  font-size: 1.5em; }
+  font-family: "Permanent Marker", serif; }
+
+.underscore-yellow {
+  text-decoration: underline solid #FAB829; }
+
+.out-of-focus {
+  color: #4d4d4d; }
+
+.in-focus {
+  color: #eee; }
+
+.largest {
+  font-size: 4em !important; }
 
 .topic-annotation {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  transform: translateY(10vh);
+  text-align: right;
   width: 100%; }
+  .topic-annotation p {
+    margin: 0; }
