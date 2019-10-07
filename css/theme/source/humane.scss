@@ -69,4 +69,22 @@ $selectionBackgroundColor: #e7ad52;
   }
 }
 
+.legend-bullet {
+  border-left-style: solid;
+  border-left-width: 80px;
+  border-radius: 20px
+}
+
+.legend-dark-red {
+  border-left-color: #84182B;
+}
+.legend-red {
+  border-left-color: #C43532;
+}
+.legend-orange {
+  border-left-color: #E8871E;
+}
+.legend-yellow {
+  border-left-color: #F7B538;
+}
 // ---------------------------------------------
