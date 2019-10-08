@@ -99,6 +99,8 @@
 
 ### What to do instead!
 - Auto-add ALL devs to all PRs 👉🏼 Tackles bias, MVE
+  - Code Owners in GitHub - Auto adds topic-specific devs if certain files are changed (those closer to codebase)
+  - https://help.github.com/en/articles/about-code-owners
 - Require 2 or more approvals (the more the better!) 👉🏼 Tackles bias, Bypassing review, MVE
 - Add policies! 👉🏼 Tackles bias, Bypassing review
   - No force push abilities to master

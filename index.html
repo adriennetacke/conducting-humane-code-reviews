@@ -76,11 +76,96 @@
 					</div>
 				</section>
 				<section>
-					<h2 style="border-left:#84182B 15px solid;">Subjectivity vs. Objectivity</h2>
+					What's subjective?
+					<aside class="notes" data-markdown>
+						# What is Subjectivity in Code Reviews?
+						## We've all had these kinds of comments
+						## I'm guilty of them earlier in my career
+						## Styling, Naming, Formatting, Preferences
+					</aside>
 				</section>
-				
-				<section data-transition="slide">
-					<h2 style="border-left:#C43532 15px solid;">Tone of Voice</h2>
+				<section>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="1">"You should really  
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="2">indent</span> lines 23 and 27."
+						</span>
+					</h3>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="3">"Replace 
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="4">var</span> with 
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="5">const</span>! C'mon, it's 2019!"
+						</span>
+					</h3>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="6">"I'd  	
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="7">rather use</span> regexes here."
+						</span>
+					</h3>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="8">"I think totalNumberOfUsers
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="9">is a better name</span>."
+						</span>
+					</h3>
+					<aside class="notes" data-markdown>
+
+					</aside>
+				</section>
+				<section>
+					<div><img src="../assets/indentation.png"/></div>
+					<p><i>From a pull request for the materialize repo</i></p>
+					<aside class="notes" data-markdown>
+						# Context: Fixing UI change
+						## Comment: Indentation, formatting, styling should NEVER be discussed, not with today's tools!
+					</aside>
+				</section>
+				<section>
+					<div><img src="../assets/subjective-2.png"/></div>
+					<p><i>From a pull request for the handsontable repo</i></p>
+					<aside class="notes" data-markdown>
+						# Context: New feature; adding a getSelected method that clearly stated developer's intention for it and what it does
+						## Comment: It does what it's supposed to (clearly in first sentence!), but what would have been *nicer* was...
+						## Additional functionality not scoped, does not contribute to the completion of this PR
+						## As if dev's initial work is not enough, useless without additional, but undiscussed, functionality.
+					</aside>
+				</section>
+				<section>
+					<div><img src="../assets/subjective.png"/></div>
+					<p><i>From a pull request for the materialize repo</i></p>
+					<aside class="notes" data-markdown>
+						# Context: Update to documentation
+						## Comment: Suggestion is made without any reason other than preference "I Think"
+					</aside>
+				</section>
+				<section>
+					<img src="../assets/unamused-blob.png"/>
+				</section>
+				<section>
+					<h1><span class="human-like">...What we can do better?</span></h1>
+				</section>
+				<section>
+					Styling, Naming, Formatting
+				</section>
+				<section>
+					<h1>🤖</h1>
+					<h2>Linters are your best friend!</h2>
+					<h2>ESLint, Prettier have saved team relationships!</h2>
+				</section>
+
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<div style="opacity: 0.4;">
+						<h2 class="legend-bullet legend-red">Tone of Voice</h2>
+						<h2 class="legend-bullet legend-orange">Slow Response Rate</h2>
+						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+					</div>
+				</section>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
+					<div style="opacity: 0.4;">
+						<h2 class="legend-bullet legend-orange">Slow Response Rate</h2>
+						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+					</div>
 				</section>
 				<section data-background-size="contain" data-background-image="../assets/people-are-mean.gif"></section>
 				<section data-transition="fade-in-then-out">
@@ -130,17 +215,55 @@
 					</h3>
 				</section>
 				<section data-background-image="../assets/tomato-eugene.gif"></section>
+				<section>
+					<h1><span class="human-like">...What we can do better?</span></h1>
+				</section>
 				<section data-transition="slide">
 					<h1>TL;DR Don't be a jerk!</h1>
 				</section>
-				<section data-transition="slide">
-					<h2 style="border-left:#E8871E 15px solid;">Slow Response Rate</h2>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
+					<div style="opacity: 0.4;">
+						<h2 class="legend-bullet legend-orange">Slow Response Rate</h2>
+						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+					</div>
 				</section>
-				<section data-transition="slide">
-					<h2 style="border-left:#F7B538 15px solid;">Process Loopholes</h2>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
+					<h2 class="legend-bullet legend-orange">Slow Response Rate</h2>
+					<div style="opacity: 0.4;">
+						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+					</div>
+				</section>
+				<section>
+					<h1><span class="human-like">...What we can do better?</span></h1>
+				</section>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
+					<h2 class="legend-bullet legend-orange">Slow Response Rate</h2>
+					<div style="opacity: 0.4;">
+						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+					</div>
+				</section>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
+					<h2 class="legend-bullet legend-orange">Slow Response Rate</h2>
+					<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+				</section>
+				<section>
+					<h1><span class="human-like">...What we can do better?</span></h1>
 				</section>
 				<section>
 					Because even after the PRs are merged, you still have to work with your teammates...
+				</section>
+				<section>
+					<h2></h2>
+					<img src="../assets/comments-qr-code.png" />
+					<h2>Constructive criticism or cheerful compliments accepted!</h2> 
 				</section>
 			</div>
 		</div>
