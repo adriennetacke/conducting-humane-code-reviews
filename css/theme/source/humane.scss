@@ -68,6 +68,14 @@ $selectionBackgroundColor: #e7ad52;
     margin: 0; 
   }
 }
+.mini-topic-annotation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #4d4d4d;
+  padding-top: 20vh;
+}
 
 .legend-bullet {
   border-left-style: solid;
