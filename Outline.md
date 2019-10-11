@@ -4,25 +4,30 @@
 - Who has performed a code review?
 - Who likes doing a code review?
 
-### Twitter Poll
-
-### Instagram Poll
-
 ## Combined w/ personal experience, here are top complaints:
 
 ## Code Review Pet Peeves
 - #1 Subjective vs Objective
 - Tone of voice in comments
-- Slow Response rate
 - Loopholes in the process
 
 ## Why do humans do code reviews? (The last piece of the process that is not automated!)
 
 ## Ideal Code Review Goals
 - Catch design flaws
+  - Does the code make sense?
+  - Is this the right codebase?
+  - Does it integrate with the rest of your codebase nicely?
 - Ensure code is coherent and clear
+  - Can I understand it?
+  - Is it too complex?
+    - Complexity = harder to refactor, greater chance for bugs
 - Validate code is needed (requested change/fix) or improves overall codebase
-- Changes are for the good of the eventual user (that includes other devs in the future)
+  - Does this improve the overall health of your codebase?
+  - Is this needed at this time?
+- Confirm functionality
+  - Especially in UI changes
+  - Does it do what it's supposed to?
 
 ## Let's break down those pet peeves one-by-one and see how we can combat it
 

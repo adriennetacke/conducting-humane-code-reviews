@@ -26,8 +26,8 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<div class="title">
-						<h1>Conducting <span class="human-like underscore-yellow">Humane</span> Code Reviews</h1>
+					<div class="title" style="padding-left: 50px;">
+						<h1 class="largest">Conducting <span class="human-like underscore-yellow">Humane</span> Code Reviews</h1>
 					</div>
 					<div class="topic-annotation">
 						<div><p>WebCamp Zagreb 2019</p></div>
@@ -49,15 +49,38 @@
 				</section>
 				<section data-transition="fade-in-then-out">
 					<h2>Catch design flaws</h2>
+					<p>Ideal Code Review Goals</p>
+					<aside class="notes" data-markdown>
+							Does the code make sense?
+							- Is this the right codebase?
+							- Does it integrate with the rest of your codebase nicely?
+					</aside>
 				</section>
 				<section data-transition="fade-in-then-out">
-					<h2>Ensure code is coherent and clear</h2>
+					<h2>Ensure code clarity and coherence</h2>
+					<p>Ideal Code Review Goals</p>
+					<aside class="notes" data-markdown>
+							Can I understand it?
+							- Is it too complex?
+								- Complexity = harder to refactor, greater chance for bugs
+					</aside>
 				</section>
 				<section data-transition="fade-in-then-out">
-					<h2>Validate code is needed and improves overall codebase</h2>
+					<h2>Validate necessity</h2>
+					<p>Ideal Code Review Goals</p>
+					<aside class="notes" data-markdown>
+							- Does this improve the overall health of your codebase?
+  						- Is this needed at this time?
+					</aside>
 				</section>
 				<section data-transition="fade-in-then-out">
-					<h2>Determine that changes are for the good of the eventual user</h2>
+					<h2>Confirm functionality</h2>
+					<p>Ideal Code Review Goals</p>
+					<aside class="notes" data-markdown>
+							- Especially in UI changes
+							- Does it do what it's supposed to?
+							- Does it do what the developer intends?
+					</aside>
 				</section>
 				<section>
 					<h1><span class="fragment fade-out">✋🏼</span><span class="fragment fade-out">✋</span><span class="fragment fade-out">✋🏿</span></h1>
@@ -75,15 +98,16 @@
 				</section>
 				<section>
 					<div><img src="../assets/unamused-blob.png"/></div>
-					<h2>Three Common Code Review Complaints</h2>
+					<h2>Top Three Code Review Complaints</h2>
+					<span class="fragment fade-in"><h3><span class="human-like">(and what we can do about them!)</span></h3></span>
 				</section>
 				<section>
-					<span class="fragment fade-in" data-fragment-index="1"><h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2></span>
+					<span class="fragment fade-in" data-fragment-index="1"><h2 class="legend-bullet legend-dark-red">Subjectivity</h2></span>
 					<span class="fragment fade-in" data-fragment-index="2"><h2 class="legend-bullet legend-red">Tone of Voice</h2></span>
 					<span class="fragment fade-in" data-fragment-index="3"><h2 class="legend-bullet legend-yellow">Process Loopholes</h2></span>
 				</section>
 				<section>
-					<span class="in-focus"><h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2></span>
+					<span class="in-focus"><h2 class="legend-bullet legend-dark-red">Subjectivity</h2></span>
 					<div style="opacity: 0.3;">
 						<h2 class="legend-bullet legend-red">Tone of Voice</h2>
 						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
@@ -96,6 +120,24 @@
 						## We've all had these kinds of comments
 						## I'm guilty of them earlier in my career
 						## Styling, Naming, Formatting, Preferences
+					</aside>
+				</section>
+				<section>
+					<div><img src="../assets/indentation.png"/></div>
+					<p><i>From a pull request for the materialize repo</i></p>
+					<aside class="notes" data-markdown>
+						# Context: Fixing UI change
+						## Comment: Indentation, formatting, styling should NEVER be discussed, not with today's tools!
+					</aside>
+				</section>
+				<section>
+					<div><img src="../assets/subjective-2.png"/></div>
+					<p><i>From a pull request for the handsontable repo</i></p>
+					<aside class="notes" data-markdown>
+						# Context: New feature; adding a getSelected method that clearly stated developer's intention for it and what it does
+						## Comment: It does what it's supposed to (clearly in first sentence!), but what would have been *nicer* was...
+						## Additional functionality not scoped, does not contribute to the completion of this PR
+						## As if dev's initial work is not enough, useless without additional, but undiscussed, functionality.
 					</aside>
 				</section>
 				<section>
@@ -120,68 +162,89 @@
 							<span class="fragment fade-in underscore-yellow" data-fragment-index="9">is a better name</span>."
 						</span>
 					</h3>
-					<aside class="notes" data-markdown>
-
-					</aside>
-				</section>
-				<section>
-					<div><img src="../assets/indentation.png"/></div>
-					<p><i>From a pull request for the materialize repo</i></p>
-					<aside class="notes" data-markdown>
-						# Context: Fixing UI change
-						## Comment: Indentation, formatting, styling should NEVER be discussed, not with today's tools!
-					</aside>
-				</section>
-				<section>
-					<div><img src="../assets/subjective-2.png"/></div>
-					<p><i>From a pull request for the handsontable repo</i></p>
-					<aside class="notes" data-markdown>
-						# Context: New feature; adding a getSelected method that clearly stated developer's intention for it and what it does
-						## Comment: It does what it's supposed to (clearly in first sentence!), but what would have been *nicer* was...
-						## Additional functionality not scoped, does not contribute to the completion of this PR
-						## As if dev's initial work is not enough, useless without additional, but undiscussed, functionality.
-					</aside>
-				</section>
-				<section>
-					<div><img src="../assets/subjective.png"/></div>
-					<p><i>From a pull request for the materialize repo</i></p>
-					<aside class="notes" data-markdown>
-						# Context: Update to documentation
-						## Comment: Suggestion is made without any reason other than preference "I Think"
-					</aside>
 				</section>
 				<section>
 					<img src="../assets/unamused-blob.png"/>
 				</section>
 				<section>
-					<section>
-						<h1><span class="human-like">...What we can do better?</span></h1>
-					</section>
-					<section>
-						Styling, Naming, Formatting
-					</section>
-					<section>
-						<h1>🤖</h1>
-						<h2>Linters are your best friend!</h2>
-						<h2>ESLint, Prettier have saved team relationships!</h2>
-					</section>
+					<h1><span class="human-like">...What we can do better?</span></h1>
 				</section>
-
 				<section>
-					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2>Before you do ANYTHING, gain consensus with your team!</h2>
+				</section>
+				<section data-background-image="../assets/teamwork-agreement.gif"></section>
+				<section>
+					<h2>Develop a Team Working Agreement and enforce it!</h2>
+				</section>
+				<section>
+					<h1>🤖</h1>
+					<h2>Let the robots take over!</h2>
+					<span class="fragment fade-in"><h3>(they're better at it anyway)</h3></span>
+				</section>
+				<section data-transition="slide">
+					<div style="display:flex; flex-direction: row;justify-content: space-around;">
+							<img src="../assets/prettier-logo.png" width="40%" />
+							<img src="../assets/eslint-logo.png" width="20%" />
+					</div>
+					<h2>Prettier and ESLint have saved team relationships!</h2>
+				</section>
+				<section>
+					<h1>Objectivity Always Wins</h1>
+				</section>
+				<section>
+					<h1>What's Objective?</h1>
+				</section>
+				<section>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="1">"This change should probably go into our utils library.
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="2">It will be re-used quite a bit</span>!"
+						</span>
+					</h3>
+				</section>
+				<section>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="1">"I've run this on several browsers and this toast actually pops up
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="2">on the top-right</span> but 
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="3">our ticket specifies bottom-right</span>! Can we fix it so it matches our requirements?"
+						</span>
+					</h3>
+				</section>
+				<section>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="1">"I'm having	
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="2">trouble keeping up with</span> the logic on lines 457-464. Is there a way we can simplify it or make it clearer?"
+						</span>
+					</h3>
+				</section>
+				<section>
+					<h3>
+						<span class="fragment fade-in" data-fragment-index="1">"This method is
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="2">being deprecated in two weeks</span>! I'd suggest replacing it with the authenticateUser method from our authentication library!"
+						</span>
+					</h3>
+				</section>
+				<section data-background-image="../assets/you-got-it.gif" data-background-size="contain"></section>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity</h2>
 					<div style="opacity: 0.3;">
 						<h2 class="legend-bullet legend-red">Tone of Voice</h2>
 						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
 					</div>
 				</section>
+				<!--End of Subjectivity-->
+				<!--Being Tone of Voice-->
 				<section>
-					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity</h2>
 					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
 					<div style="opacity: 0.3;">
 						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
 					</div>
 				</section>
 				<section data-background-size="contain" data-background-image="../assets/people-are-mean.gif"></section>
+				<section>
+					<img src="../assets/tone-of-voice-1.png" style="width:200% !important;"/>
+					<p><i>From a pull request for the materialize repo</i></p>
+				</section>
 				<section data-transition="fade-in-then-out">
 					<h3>
 						<span class="fragment fade-in" data-fragment-index="1">"This implementation is 
@@ -200,7 +263,7 @@
 						</span>
 					</h3>
 					<h3>
-						<span class="fragment fade-in" data-fragment-index="8">"<span class="fragment fade-in underscore-yellow" data-fragment-index="9">Are you really using</span>
+						<span class="fragment fade-in" data -fragment-index="8">"<span class="fragment fade-in underscore-yellow" data-fragment-index="9">Are you really using</span>
 						lodash, really?"
 						</span>
 					</h3>
@@ -232,26 +295,69 @@
 				<section>
 					<h1><span class="human-like">...What we can do better?</span></h1>
 				</section>
-				<section data-transition="slide">
-					<h1>TL;DR Don't be a jerk!</h1>
+				<section>
+					<h1 class="largest">TL;DR Don't be a jerk!</h1>
 				</section>
 				<section>
-					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h1><span class="franment fade-in" data-fragment-index="1">Suggest </span><span class="fragment fade-in italic underscore-yellow" data-fragment-index="2">with facts</span></h1>
+					<h1><span class="fragment fade-in" data-fragment-index="3">Reject </span><span class="fragment fade-in italic underscore-yellow" data-fragment-index="4">with courtesy</span></h1>
+					<h1><span class="fragment fade-in" data-fragment-index="5">Clarify </span><span class="fragment fade-in italic underscore-yellow" data-fragment-index="6">with an open-mind</span></h1>
+				</section>
+				<section data-background-image="../assets/yeah-arnold.gif" data-background-size="contain"></section>
+				<section>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity</h2>
 					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
 					<div style="opacity: 0.3;">
 						<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
 					</div>
 				</section>
 				<section>
-					<h2 class="legend-bullet legend-dark-red">Subjectivity vs. Objectivity</h2>
+					<h2 class="legend-bullet legend-dark-red">Subjectivity</h2>
 					<h2 class="legend-bullet legend-red">Tone of Voice</h2>
 					<h2 class="legend-bullet legend-yellow">Process Loopholes</h2>
+				</section>
+				<section data-background-image="../assets/favorites.gif" data-background-size="contain"></section>
+				<section>
+					<h1>Bias</h1>
+				</section>
+				<section>
+					<h1>No Reviews(!)</h1>
+				</section>
+				<section>
+					<h1>M.V.E.</h1>
+				</section>
+				<section data-transition="fade-in-then-out">
+					<h1>Minimum V.E.</h1>
+				</section>
+				<section data-transition="fade-in-then-out">
+					<h1>Minimum Viable E.</h1>
+				</section>
+				<section data-transition="fade-in-then-out">
+					<h1>Minimum Viable Effort</h1>
 				</section>
 				<section>
 					<h1><span class="human-like">...What we can do better?</span></h1>
 				</section>
 				<section>
+					<h1>Auto add developers to PRs</h1>
+				</section>
+				<section>
+					<h1>Use Code Owners in GitHub</h1>
+				</section>
+				<section>
+					<h1>Establish code review policies</h1>
+				</section>
+				<section>
+					<h1>Enforce the process for EVERYONE</h1>
+				</section>
+				<section>
 					Because even after the PRs are merged, you still have to work with your teammates...
+				</section>
+				<section data-background-image="../assets/happy.gif"></section>
+				<section data-background-image="../assets/twitter.gif" style="text-align:right;">
+					<h2 style="margin:0;">💛 this talk?</h2>
+					<h2 style="margin:0;">Let everyone know!</h2>
+					<h1>@adriennetacke</h1>
 				</section>
 				<section>
 					<h2></h2>
