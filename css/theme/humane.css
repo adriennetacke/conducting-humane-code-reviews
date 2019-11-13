@@ -271,6 +271,13 @@ body {
   text-align: left;
   width: 70%; }
 
+.twitter-annotation {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  font-size: .85em;
+  opacity: .8; }
+
 .human-like {
   font-family: "Permanent Marker", serif; }
 
