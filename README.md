@@ -5,7 +5,7 @@
 
 ## Presented by [Adrienne Tacke](https://blog.adrienne.io/speaking)
 
-## 💛 this? Tweet about it and tag me! [@adriennetacke](https://www,twitter.com/AdrienneTacke)
+## 💛 this? Tweet about it and tag me! [@adriennetacke](https://www.twitter.com/AdrienneTacke)
 
 
 
