@@ -17,7 +17,7 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #111;
+$backgroundColor: #fff;
 
 $mainFont: 'Roboto Mono', sans-serif;
 $linkColor: #e7ad52;
@@ -41,9 +41,9 @@ $selectionBackgroundColor: #e7ad52;
 
 .twitter-annotation {
   position: absolute;
-  top: 5%;
+  top: 2%;
   right: 3%;
-  font-size: .85em;
+  font-size: .65em;
   opacity: .8;
 }
 
