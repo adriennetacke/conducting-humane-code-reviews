@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Conducting Humane Code Reviews - WebCamp Zagreb</title>
+		<title>Conducting Humane Code Reviews</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -35,17 +35,21 @@
 					</div>
 				</section>
 				<section>
-					<img src="./assets/book.jpg" width="30%" />
+					<img src="./assets/book.jpg" width="30%" class="shadowed-img" />
 					<h2>I wrote a book</h2>
 				</section>
 				<section>
-					<img src="./assets/instructor.png" width="50%" />
+					<img src="./assets/instructor.png" width="50%" class="shadowed-img"/>
 					<h2>I teach others on LinkedIn Learning</h2>
+				</section>
+				<section>
+					<img src="./assets/surprise-talk.png" width="30%" class="shadowed-img"/>
+					<h2>I talked about Azure Durable Functions yesterday!</h3h2>
 				</section>
 				<section>
 					<h1>✋🏼✋✋🏿</h1>
 					<div>
-							<h2>Who has performed a code review?</h2>
+						<h2>Who has performed a code review?</h2>
 					</div>	
 				</section>
 				<section>
@@ -59,26 +63,26 @@
 					<h2>Catch design flaws</h2>
 					<p>Ideal Code Review Goals</p>
 					<aside class="notes" data-markdown>
-							Does the code make sense?
-							- Is this the right codebase?
-							- Does it integrate with the rest of your codebase nicely?
+					Does the code make sense?
+					- Is this the right codebase?
+					- Does it integrate with the rest of your codebase nicely?
 					</aside>
 				</section>
 				<section data-transition="fade-in-then-out">
 					<h2>Ensure code clarity and coherence</h2>
 					<p>Ideal Code Review Goals</p>
 					<aside class="notes" data-markdown>
-							Can I understand it?
-							- Is it too complex?
-								- Complexity = harder to refactor, greater chance for bugs
+					Can I understand it?
+					- Is it too complex?
+						- Complexity = harder to refactor, greater chance for bugs
 					</aside>
 				</section>
 				<section data-transition="fade-in-then-out">
 					<h2>Validate necessity</h2>
 					<p>Ideal Code Review Goals</p>
 					<aside class="notes" data-markdown>
-							- Does this improve the overall health of your codebase?
-  						- Is this needed at this time?
+					- Does this improve the overall health of your codebase?
+					- Is this needed at this time?
 					</aside>
 				</section>
 				<section data-transition="fade-in-then-out">
@@ -157,7 +161,7 @@
 					<h3>
 						<span class="fragment fade-in" data-fragment-index="3">"Replace 
 							<span class="fragment fade-in underscore-yellow" data-fragment-index="4">var</span> with 
-							<span class="fragment fade-in underscore-yellow" data-fragment-index="5">const</span>! C'mon, it's 2019!"
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="5">const</span>! C'mon, it's 2020!"
 						</span>
 					</h3>
 					<h3>
@@ -166,8 +170,8 @@
 						</span>
 					</h3>
 					<h3>
-						<span class="fragment fade-in" data-fragment-index="8">"totalNumberOfUsers
-							<span class="fragment fade-in underscore-yellow" data-fragment-index="9">is a better name</span>."
+						<span class="fragment fade-in" data-fragment-index="8">"TotalNumberOfUsers
+							<span class="fragment fade-in underscore-yellow" data-fragment-index="9">is better than TotalUsers</span>."
 						</span>
 					</h3>
 				</section>
@@ -178,15 +182,18 @@
 					<h1><span class="human-like">...What we can do better?</span></h1>
 				</section>
 				<section>
-					<h2>Before you do ANYTHING, gain consensus with your team!</h2>
+					<h2>Before you do ANYTHING, gain <span class="underscore-yellow">consensus</span> with your team!</h2>
 				</section>
 				<section data-background-image="./assets/teamwork-agreement.gif"></section>
 				<section>
 					<h2>Develop a Team Working Agreement and enforce it!</h2>
 				</section>
 				<section>
+					<h2>What's a Team Working Agreement?</h2>
+				</section>
+				<section>
 					<h1>🤖</h1>
-					<h2>Let the robots take over!</h2>
+					<h2>Let the <span class="underscore-yellow">robots</span> take over!</h2>
 					<span class="fragment fade-in"><h3>(they're better at it anyway)</h3></span>
 				</section>
 				<section data-transition="slide">
@@ -195,6 +202,12 @@
 							<img src="./assets/eslint-logo.png" width="20%" />
 					</div>
 					<h2>Prettier and ESLint have saved team relationships!</h2>
+				</section>
+				<section data-transition="slide">
+					<div style="display:flex; flex-direction: row;justify-content: center;">
+							<img src="./assets/filip.png" width="30%" />
+					</div>
+					<h2>EditorConfig && Roslyn analyzers = 💛</h2>
 				</section>
 				<section>
 					<h1>Objectivity Always Wins</h1>
@@ -231,6 +244,11 @@
 						</span>
 					</h3>
 				</section>
+				<section>
+					<h1>🥰</h1>
+					<h2 class="fragment fade in" data-fragment-index="1">If you see something you <span class="underscore-yellow">like</span>,</h2> 
+					<h1 class="fragment fade in" data-fragment-index="2">say so!</h1>
+				</section>
 				<section data-background-image="./assets/you-got-it.gif" data-background-size="contain"></section>
 				<section>
 					<h2 class="legend-bullet legend-dark-red">Subjectivity</h2>
@@ -240,7 +258,7 @@
 					</div>
 				</section>
 				<!--End of Subjectivity-->
-				<!--Being Tone of Voice-->
+				<!--Begin Tone of Voice-->
 				<section>
 					<h2 class="legend-bullet legend-dark-red">Subjectivity</h2>
 					<h2 class="legend-bullet legend-red">Tone of Voice</h2>

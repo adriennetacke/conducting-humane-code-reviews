@@ -16,7 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   font-weight: normal;
-  color: #eee; }
+  color: #111; }
 
 ::selection {
   color: #fff;
@@ -43,7 +43,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: #111;
   font-family: "Montserrat", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
